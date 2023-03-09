@@ -27,6 +27,7 @@ function generateHTML(employees) {
 			special = `School: ${employee.school}`;
 		}
 
+		//insert the data for each role into html
 		return `
 				<div class="col-md-12 box ">
         	<h2>${name}</h2>
@@ -42,6 +43,7 @@ function generateHTML(employees) {
 				`;
 	});
 
+	//join each roles into the html
 	const html = `
     <!DOCTYPE html>
     <html lang="en">
@@ -54,7 +56,7 @@ function generateHTML(employees) {
 			rel="stylesheet"
 			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
 			crossorigin="anonymous" />
-      <link rel="stylesheet" href="/dist/style.css" />
+      <link rel="stylesheet" href="/dist/css/style.css" />
       <title>My Team</title>
     </head>
 
@@ -75,7 +77,7 @@ function generateHTML(employees) {
   `;
 
 	//write the file for index.html
-	fs.writeFile("dist/index.html", html, (error) => {
+	fs.writeFile("dist/html/index.html", html, (error) => {
 		if (error) throw error;
 		console.log("index.html file generated successfully!");
 	});

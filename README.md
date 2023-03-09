@@ -2,7 +2,11 @@
 
 ## Description
 
-A command-line application that accepts user input to generate a nicely formatted team roster in an HTML file.
+The task at hand is to develop a Node.js command-line application that receives employee information for a software engineering team and generates an HTML webpage with individual summaries for each employee. To accomplish this, the Inquirer package must be utilized, and version 8.2.4 is required, which can be installed with the command "npm i inquirer@8.2.4" in the project folder. Additionally, writing a unit test for each section of the code and ensuring that each test passes is essential to producing code that is maintainable and robust. By fulfilling these requirements, you will be able to create a functional and reliable application that will efficiently handle employee data and present it in an organized and accessible format.
+
+## ScreenShot
+
+![alt text](./dist/images/screencapture-127-0-0-1-5500-dist-index-html-2023-03-09-13_27_50.png)
 
 ## Acceptance Criteria
 
@@ -24,8 +28,12 @@ When the user clicks on a GitHub username in the generated HTML, the correspondi
 
 ## Installation
 
-npm i inquirer@8.2.4
+1. git clone git@github.com:jackbngn/Profile-Generator.git
+2. npm i inquirer@8.2.4
+3. node index.js
 
 ## Usage
 
-Enter node index.js in the integrated terminal and answer the following prompted questions.
+1. Follow the on-screen prompts to enter the team manager's name, employee ID, email address, and office number.
+2. Choose from the main menu to add an engineer or an intern, or to finish building the team.
+3. Enter the necessary information for each team.
